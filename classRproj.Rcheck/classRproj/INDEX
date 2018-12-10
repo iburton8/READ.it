@@ -1,0 +1,6 @@
+classRporj1             classRproj
+s_func                  Create sampling function This is a function to
+                        create a sample of the length n for a given pdf
+s_func2D                Creating a 2 Dimentional Sampling Function This
+                        is a function to create a sample of the length
+                        n for a given joint pdf
