@@ -8,7 +8,7 @@
 #' @param C - is >= to the max value of the pdf
 #'
 #' @return This returns a vector of n sample that have been excepted as being valid according to pdf of the
-#' interval (a, b)
+#' interval (a, b).
 #'
 #' @importFrom stats dnorm
 #' @importFrom stats runif

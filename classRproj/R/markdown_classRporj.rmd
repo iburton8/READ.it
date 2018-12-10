@@ -1,0 +1,39 @@
+---
+title: "classsRporj demonstation"
+author: "Isaac Burton"
+date: "December 8, 2018"
+output: html_document
+---
+
+'''{r}
+library(classRporj)
+
+'''
+
+'''{r}
+sim_data <- s_func(n = 1000, pdf = exppdf, a = -4, b = 4, C= 1)
+summary(sim_data)
+hist(sample, probability = TRUE)
+exppdf <- function(x){
+  exp(x)/(1+exp(x))^2
+}
+curve(exppdf, -4, 4, add = TRUE)
+'''
+
+'''{r}
+sim_data2 <- s_func2D(n = 1000, jointpdf_a , a = -4, b = 4, C= 1)
+summary(sim_data2)
+hist(sample, probability = TRUE)
+curve(jointpdf_a, -4, 4, add = TRUE)
+jointpdf_a <- function(x,y){
+  if(0 <= x && x <= 1 && 0 <= y && y <= 1 && 0 <= (x+y) && (x+y) <= 1){
+    24*x*y
+  }else{
+    0
+  }
+}
+}
+curve(exppdf, -4, 4, add = TRUE)
+'''
+
+

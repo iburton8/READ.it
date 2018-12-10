@@ -8,7 +8,7 @@
 #' @param C - is >= to the max value of the  joint pdf.
 #'
 #' @return This returns a vector list of 2 by n sample that have been excepted as being valid according to joint pdf
-#' of the interval (a, b)
+#' of the interval (a, b).
 #'
 #' @importFrom stats dnorm
 #' @importFrom stats runif
